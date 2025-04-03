@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YouMeal | Доставка еды</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/src/css/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="/src/js/main.js" async></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__inner wrap">
+                <div class="header__logo">
+                    <a href="/" class="logo"><img src="/src/img/logo.svg" alt="YouMeal" loading="lazy" /></a>
+                </div>
+                <div class="header__banner">
+                    <div class="header__bg">
+                        <img src="/src/img/bg.svg" alt="" />
+                    </div>
+                    <div class="header__contetn">
+                        <div class="header__title h1">Только самые <span class="header__title--orange">сочные бургеры!</span></div>
+                        <div class="header__subtitle">Бесплатная доставка от 599₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <nav class="tabs__menu">
+                <ul class="tabs__manu-list wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/cheeseburger.svg" alt="" />Бургеры</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/snack.svg" alt="" />Закуски</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/hotdog.svg" alt="" />Хот-доги</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/combo.svg" alt="" />Комбо</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/shawarma.svg" alt="" />Шаурма</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/pizza.svg" alt="" />Пицца</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/wok.svg" alt="" />Вок</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/bagel.svg" alt="" />Десерты</a>
+                            </li>
+                            <li class="swiper-slide tabs__menu-item">
+                                <a href="javascript:void(0)" class="tabs__menu-link"> <img src="/src/img/sauce.svg" alt="" />Соусы</a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="tabs__container">
+                <div class="tabs__flexbox wrap">
+                    <div id="tabs__card-modal" class="tabs__card">
+                        <div class="tabs__card-section">
+                            <div class="tabs__card-title">Корзина</div>
+                            <div class="tabs__card-count">4</div>
+                        </div>
+                        <div class="tabs__card-list tabs__card-mobile">
+                            <div class="tabs__card-item">
+                                <div class="tabs__card-block">
+                                    <div class="tabs__card-images">
+                                        <a href="#" class="tabs__card-images-link" style="background-image: url(/src/img/product-hamburger.png)"></a>
+                                    </div>
+                                    <div class="tabs__basket">
+                                        <div class="tabs__basket-title">Супер сырный</div>
+                                        <div class="tabs__basket-gram">512г</div>
+                                        <div class="tabs__basket-price">550₽</div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__basket-count">
+                                    <div class="tabs__basket-quantity">
+                                        <a href="javascript:void(0)" class="tabs__basket-minus">+</a>
+                                        <input class="tabs__basket-input" size="3" type="text" value="1" name="quantity" id="quantity" />
+                                        <a href="javascript:void(0)" class="tabs__basket-plus">-</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__card-item">
+                                <div class="tabs__card-block">
+                                    <div class="tabs__card-images">
+                                        <a href="#" class="tabs__card-images-link" style="background-image: url(/src/img/fre.png)"></a>
+                                    </div>
+                                    <div class="tabs__basket">
+                                        <div class="tabs__basket-title">Картошка фри</div>
+                                        <div class="tabs__basket-gram">180г</div>
+                                        <div class="tabs__basket-price">245₽</div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__basket-count">
+                                    <div class="tabs__basket-quantity">
+                                        <a href="javascript:void(0)" class="tabs__basket-minus">+</a>
+                                        <input class="tabs__basket-input" size="3" type="text" value="2" name="quantity" id="quantity" />
+                                        <a href="javascript:void(0)" class="tabs__basket-plus">-</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__card-item">
+                                <div class="tabs__card-block">
+                                    <div class="tabs__card-images">
+                                        <a href="#" class="tabs__card-images-link" style="background-image: url(/src/img/food.png)"></a>
+                                    </div>
+                                    <div class="tabs__basket">
+                                        <div class="tabs__basket-title">Жгучий хот-дог</div>
+                                        <div class="tabs__basket-gram">245г</div>
+                                        <div class="tabs__basket-price">239₽</div>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__basket-count">
+                                    <div class="tabs__basket-quantity">
+                                        <a href="javascript:void(0)" class="tabs__basket-minus">+</a>
+                                        <input class="tabs__basket-input" size="3" type="text" value="1" name="quantity" id="quantity" />
+                                        <a href="javascript:void(0)" class="tabs__basket-plus">-</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__sum">
+                                <div class="tabs__sum-title">Итого</div>
+                                <div class="tabs__sum-value">1279₽</div>
+                            </div>
+                            <div class="tabs__basket-order">
+                                <a href="javascript:void(0)" class="tabs__basket-pay">Оформить заказ</a>
+                            </div>
+                            <div class="tabs__basket-delivery">
+                                <img src="/src/img/moped.svg" alt="delivery" loading="lazy" />
+                                <span class="delivery-title">Бесплатная доставка</span>
+                                <span id="tabs__card-modal" class="tabs__delivery-close">Свернуть</span>
+                            </div>
+                        </div>
+                        <p>
+                            <font class="errortext hidden">Тут пока пусто :(</font>
+                        </p>
+                    </div>
+
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Бургеры</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/product.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">689₽</div>
+                                    <div class="tabs__manu-text">Мясная бомба</div>
+                                    <div class="tabs__manu-descr">520г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/product-hamburger.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">550₽</div>
+                                    <div class="tabs__manu-text">Супер сырный</div>
+                                    <div class="tabs__manu-descr">512г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/shiz.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">689₽</div>
+                                    <div class="tabs__manu-text">Мясная бомба</div>
+                                    <div class="tabs__manu-descr">520г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/product1.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">689₽</div>
+                                    <div class="tabs__manu-text">Мясная бомба</div>
+                                    <div class="tabs__manu-descr">520г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/product2.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">689₽</div>
+                                    <div class="tabs__manu-text">Мясная бомба</div>
+                                    <div class="tabs__manu-descr">520г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/product3.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">689₽</div>
+                                    <div class="tabs__manu-text">Мясная бомба</div>
+                                    <div class="tabs__manu-descr">520г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Закуски</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/nachys.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">250₽</div>
+                                    <div class="tabs__manu-text">Начос</div>
+                                    <div class="tabs__manu-descr">220г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/fre.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">245₽</div>
+                                    <div class="tabs__manu-text">Картошка фри</div>
+                                    <div class="tabs__manu-descr">180г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/luk.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">230₽</div>
+                                    <div class="tabs__manu-text">Луковые кольца</div>
+                                    <div class="tabs__manu-descr">160г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Хот-доги</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/hotDog2.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">290₽</div>
+                                    <div class="tabs__manu-text">Домашний хот-дог</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/food.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">239₽</div>
+                                    <div class="tabs__manu-text">Жгучий хот-дог</div>
+                                    <div class="tabs__manu-descr">245г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-image: url(/src/img/clasicHot.png)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">220₽</div>
+                                    <div class="tabs__manu-text">Классический хот-дог</div>
+                                    <div class="tabs__manu-descr">215г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Комбо</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Комбо</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Комбо</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Комбо</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Шаурма</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Шаурма</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Шаурма</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Шаурма</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Пицца</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Пицца</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Пицца</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Пицца</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Вок</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Десерты</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Вок</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Вок</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Десерты</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Десерты</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Десерты</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Десерты</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__menu-contetn">
+                        <div class="tabs__menu-title">Соусы</div>
+                        <div class="tabs__menu-card">
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Соусы</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Соусы</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__menu-product">
+                                <a href="javascript:void(0)" class="tabs__manu-image">
+                                    <span class="tabs__manu-image-original" style="background-color: var(--colorGray)"></span>
+                                </a>
+                                <div class="tabs__menu-actions">
+                                    <div class="tabs__manu-price">0₽</div>
+                                    <div class="tabs__manu-text">Соусы</div>
+                                    <div class="tabs__manu-descr">250г</div>
+                                    <div class="tabs__manu-btn">
+                                        <a href="javascript:void(0)" class="tabs__manu-button add-to-cart">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__bottom">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a href="/" class="logo">
+                            <img src="/src/img/logo_footer.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="footer__copyright">
+                        <span>© YouMeal, 2022</span>
+                        <a class="telegram" target="_blank" href="https://t.me/Balweb">development</a>
+                    </div>
+                </div>
+
+                <div class="footer__call">
+                    <div class="footer__contact">
+                        <div class="footer__title">Номер для заказа</div>
+                        <div class="footer__phone">
+                            <img src="/src/img/Call.svg" alt="" />
+                            <a class="footer__phone-link" href="tel:+7(930)833-**-**">+7(930)833-**-**</a>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <div class="footer__social-title">Мы в соцсетях</div>
+                        <a class="vk" href=""
+                            ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.9999 0C8.05863 0 -0.00012207 8.05875 -0.00012207 18C-0.00012207 27.9412 8.05863 36 17.9999 36C27.9411 36 35.9999 27.9412 35.9999 18C35.9999 8.05875 27.9411 0 17.9999 0ZM24.9224 20.3081C24.9224 20.3081 26.5143 21.8794 26.9061 22.6087C26.9174 22.6237 26.923 22.6387 26.9268 22.6462C27.0861 22.9144 27.1236 23.1225 27.0449 23.2781C26.9136 23.5369 26.4636 23.6644 26.3099 23.6756H23.4974C23.3024 23.6756 22.8936 23.625 22.3986 23.2837C22.018 23.0175 21.643 22.5806 21.2774 22.155C20.7318 21.5212 20.2593 20.9738 19.783 20.9738C19.7225 20.9736 19.6624 20.9831 19.6049 21.0019C19.2449 21.1181 18.7836 21.6319 18.7836 23.0006C18.7836 23.4281 18.4461 23.6737 18.208 23.6737H16.9199C16.4811 23.6737 14.1955 23.52 12.1705 21.3844C9.69175 18.7687 7.4605 13.5225 7.44175 13.4737C7.30113 13.1344 7.59175 12.9525 7.90863 12.9525H10.7493C11.128 12.9525 11.2518 13.1831 11.338 13.3875C11.4393 13.6256 11.8105 14.5725 12.4199 15.6375C13.408 17.3737 14.0136 18.0787 14.4993 18.0787C14.5903 18.0777 14.6797 18.0545 14.7599 18.0112C15.3936 17.6587 15.2755 15.3994 15.2474 14.9306C15.2474 14.8425 15.2455 13.92 14.9211 13.4775C14.6886 13.1569 14.293 13.035 14.053 12.99C14.1501 12.856 14.2781 12.7473 14.4261 12.6731C14.8611 12.4556 15.6449 12.4237 16.423 12.4237H16.8561C17.6999 12.435 17.9174 12.4894 18.223 12.5662C18.8418 12.7144 18.8549 13.1137 18.8005 14.4806C18.7836 14.8687 18.7668 15.3075 18.7668 15.825C18.7668 15.9375 18.7611 16.0575 18.7611 16.185C18.7424 16.8806 18.7199 17.67 19.2111 17.9944C19.2752 18.0346 19.3492 18.056 19.4249 18.0562C19.5955 18.0562 20.1093 18.0562 21.5005 15.6694C21.9296 14.9011 22.3024 14.1028 22.6161 13.2806C22.6443 13.2319 22.7268 13.0819 22.8243 13.0237C22.8962 12.9871 22.976 12.9684 23.0568 12.9694H26.3961C26.7599 12.9694 27.0093 13.0237 27.0561 13.1644C27.1386 13.3875 27.0411 14.0681 25.5168 16.1325L24.8361 17.0306C23.4543 18.8419 23.4543 18.9338 24.9224 20.3081Z"
+                                    fill="#FF7020"
+                                />
+                            </svg>
+                        </a>
+                        <a class="tg" href=""
+                            ><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.9998 18C35.9998 22.7739 34.1033 27.3523 30.7277 30.7279C27.352 34.1036 22.7737 36 17.9998 36C13.2259 36 8.64749 34.1036 5.27183 30.7279C1.89618 27.3523 -0.000244141 22.7739 -0.000244141 18C-0.000244141 13.2261 1.89618 8.64773 5.27183 5.27208C8.64749 1.89642 13.2259 0 17.9998 0C22.7737 0 27.352 1.89642 30.7277 5.27208C34.1033 8.64773 35.9998 13.2261 35.9998 18ZM18.6455 13.2885C16.895 14.0175 13.394 15.525 8.14701 17.811C7.29651 18.1485 6.84876 18.4815 6.80826 18.8055C6.74076 19.3522 7.42701 19.5683 8.36076 19.863L8.75451 19.9868C9.67251 20.286 10.91 20.6348 11.5513 20.6483C12.1363 20.6618 12.7865 20.4233 13.5043 19.9283C18.407 16.6185 20.9383 14.9467 21.0958 14.9107C21.2083 14.8837 21.3658 14.8523 21.4693 14.9468C21.575 15.039 21.5638 15.2168 21.5525 15.264C21.485 15.5542 18.7918 18.0562 17.399 19.3522C16.9648 19.7572 16.6565 20.043 16.5935 20.1082C16.4548 20.25 16.3138 20.3895 16.1705 20.5268C15.3155 21.3503 14.6765 21.9668 16.2043 22.9748C16.94 23.4608 17.5295 23.859 18.1168 24.2595C18.7558 24.696 19.3948 25.1303 20.2228 25.6748C20.432 25.8098 20.6345 25.956 20.8303 26.0955C21.575 26.6265 22.2478 27.1035 23.0735 27.027C23.555 26.982 24.0523 26.532 24.3043 25.182C24.9005 21.9938 26.0728 15.0885 26.3428 12.2423C26.3592 12.0056 26.3494 11.7679 26.3135 11.5335C26.2923 11.3443 26.2008 11.17 26.057 11.0452C25.8523 10.9039 25.6082 10.8307 25.3595 10.836C24.6845 10.8472 23.6428 11.2095 18.6455 13.2885Z"
+                                    fill="#FF7020"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__mobile">
+                <span>© YouMeal, 2022</span>
+                <a class="telegram" target="_blank" href="https://t.me/Balweb">development</a>
+            </div>
+        </div>
+        <div id="prodict-descr" class="popup__window">
+            <div id="myModal" class="popur__window-contetn">
+                <div id="closeBtn" class="popur__window-text tabs__menu-title popur__window-close">Мясная бомба</div>
+                <div class="popur__window-product">
+                    <div class="popur__window-flexbox">
+                        <div class="pupur__window-left">
+                            <a href="javascript:void(0)" class="popur__window-image">
+                                <span class="tabs__manu-image-original tabs__menu-images-mobile" style="background-image: url(/src/img/product.png)"></span>
+                            </a>
+                        </div>
+
+                        <div class="popur__window-wrapper">
+                            <div class="popur__window-descriptions">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+                            <div class="popur__window-compound">
+                                <div class="tabs__menu-compound-title">Состав:</div>
+                                <p>Пшеничная булочка</p>
+                                <p>Котлета из говядины</p>
+                                <p>Красный лук</p>
+                                <p>Листья салата</p>
+                                <p>Соус горчичный</p>
+                            </div>
+                            <div class="popur__window-descr-subtitle">520г, ккал 430</div>
+                        </div>
+                    </div>
+
+                    <div class="popur__window-flex">
+                        <div class="pupur__window-right">
+                            <div class="popur__window-actions">
+                                <div class="tabs__manu-btn pupur__window-btn">
+                                    <a href="javascript:void(0)" class="btn__primary add-to-cart">Добавить</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popur__window-left">
+                            <div class="tabs__basket-quantity">
+                                <a href="javascript:void(0)" class="tabs__basket-minus">+</a>
+                                <input class="tabs__basket-input" size="3" type="text" value="1" name="quantity" id="quantity" />
+                                <a href="javascript:void(0)" class="tabs__basket-plus">-</a>
+                            </div>
+                            <div class="tabs__manu-price--old">689₽</div>
+                        </div>
+                    </div>
+                    <div class="tabs__manu-price--mobile">689₽</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="prodict-delivery" class="popup__delivery">
+            <div id="modalDelivery" class="popur__window-delivery">
+                <div class="popur__delivery">
+                    <div class="popur__left">
+                        <img src="/src/img/pic.png" alt="" />
+                    </div>
+                    <div class="popur__right">
+                        <span class="popur__window-delivery--close"></span>
+                        <div class="popur__title">Доставка</div>
+                        <form method="" action="" class="popur__form">
+                            <div class="popur-form__contetn">
+                                <input class="popur-form__input" placeholder="Ваше имя" type="text" name="" id="" />
+                                <input class="popur-form__input" placeholder="Телефон" type="tel" name="" id="" />
+                            </div>
+                            <div id="inputPreview">
+                                <input name="cssCheckbox" id="Preview_1" type="checkbox" class="css-checkbox" aria-checked="false" />
+                                <label class="Preview_1" for="Preview_1">Самовывоз</label>
+                                <input name="cssCheckbox" id="Preview_2" type="checkbox" class="css-checkbox" aria-checked="true" checked="" />
+                                <label class="Preview_2" for="Preview_2">Доставка</label>
+                            </div>
+
+                            <div class="popur-form__wrapper">
+                                <div class="popur-form__wrapper--left">
+                                    <input class="popur-form__input" placeholder="Улица, дом, квартира" type="text" name="street" id="street" />
+                                </div>
+                                <div class="popur-form__wrapper--rigth">
+                                    <input class="popur-form__in" placeholder="Этаж" type="text" name="floor" id="floor" />
+                                    <input class="popur-form__in" placeholder="Домофон" type="text" name="intercom" id="intercom" />
+                                </div>
+                            </div>
+                            <div class="popur__form-btn">
+                                <button type="submit" class="popup__from-btn">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-window" class="popup-window-overlay"></div>
+    </body>
+</html>
