@@ -1,6 +1,7 @@
 /* tabs__menu */
 const tabsMenu = document.querySelectorAll('.tabs__menu-contetn');
 const tabsItem = document.querySelectorAll('.tabs__menu-link');
+const openBtn = document.querySelectorAll('.tabs__menu-product');
 
 /* tabs__menu */
 openBtn.forEach((btnOpen) => {
@@ -37,7 +38,6 @@ tabsItem.forEach((itembtn, index) => {
 
 /* modal_product */
 const modal = document.getElementById('myModal');
-const openBtn = document.querySelectorAll('.tabs__menu-product');
 const closeBtn = document.getElementById('closeBtn');
 const popupWindow = document.getElementById('popup-window');
 
