@@ -22,18 +22,6 @@ const tabsDeliveryClose = document.querySelector('.tabs__delivery-close');
 const tabsCardMobil = document.querySelector('.tabs__card-mobile');
 const tabsCard = document.querySelector('.tabs__card');
 
-/* modal_product */
-closeBtn.addEventListener('click', () => {
-    modal.classList.remove('active');
-    popupWindow.classList.remove('active');
-});
-
-popupWindow.addEventListener('click', () => {
-    modal.classList.remove('active');
-    popupWindow.classList.remove('active');
-    modalDelivery.classList.remove('active');
-});
-
 /* tabs__menu */
 openBtn.forEach((btnOpen) => {
     btnOpen.addEventListener('click', () => {
@@ -116,6 +104,18 @@ tabsCard.addEventListener('click', function () {
 tabsDeliveryClose.addEventListener('click', function () {
     tabsCardMobil.classList.remove('active');
     tabsCard.classList.remove('active');
+});
+
+/* modal_product */
+closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+    popupWindow.classList.remove('active');
+});
+
+popupWindow.addEventListener('click', () => {
+    modal.classList.remove('active');
+    popupWindow.classList.remove('active');
+    modalDelivery.classList.remove('active');
 });
 
 /* slider */
