@@ -2,26 +2,6 @@
 const tabsMenu = document.querySelectorAll('.tabs__menu-contetn');
 const tabsItem = document.querySelectorAll('.tabs__menu-link');
 
-/* modal_product */
-const modal = document.getElementById('myModal');
-const openBtn = document.querySelectorAll('.tabs__menu-product');
-const closeBtn = document.getElementById('closeBtn');
-const popupWindow = document.getElementById('popup-window');
-
-/* checkbox */
-const heckBox = document.querySelectorAll('.css-checkbox');
-const popurFromWrapper = document.querySelector('.popur-form__wrapper');
-
-/* delivery_modal */
-const tabsOrder = document.querySelector('.tabs__basket-order');
-const modalDelivery = document.getElementById('modalDelivery');
-const popurDeliveryClose = document.querySelector('.popur__window-delivery--close');
-
-/* card */
-const tabsDeliveryClose = document.querySelector('.tabs__delivery-close');
-const tabsCardMobil = document.querySelector('.tabs__card-mobile');
-const tabsCard = document.querySelector('.tabs__card');
-
 /* tabs__menu */
 openBtn.forEach((btnOpen) => {
     btnOpen.addEventListener('click', () => {
@@ -55,6 +35,28 @@ tabsItem.forEach((itembtn, index) => {
     });
 });
 
+/* modal_product */
+const modal = document.getElementById('myModal');
+const openBtn = document.querySelectorAll('.tabs__menu-product');
+const closeBtn = document.getElementById('closeBtn');
+const popupWindow = document.getElementById('popup-window');
+
+/* modal_product */
+closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+    popupWindow.classList.remove('active');
+});
+
+popupWindow.addEventListener('click', () => {
+    modal.classList.remove('active');
+    popupWindow.classList.remove('active');
+    modalDelivery.classList.remove('active');
+});
+
+/* checkbox */
+const heckBox = document.querySelectorAll('.css-checkbox');
+const popurFromWrapper = document.querySelector('.popur-form__wrapper');
+
 /* checkbox */
 function hideContetn() {
     heckBox.forEach((item) => {
@@ -85,6 +87,11 @@ heckBox.forEach((itemBox, index) => {
 });
 
 /* delivery_modal */
+const tabsOrder = document.querySelector('.tabs__basket-order');
+const modalDelivery = document.getElementById('modalDelivery');
+const popurDeliveryClose = document.querySelector('.popur__window-delivery--close');
+
+/* delivery_modal */
 tabsOrder.addEventListener('click', function () {
     modalDelivery.classList.add('active');
     popupWindow.classList.add('active');
@@ -96,6 +103,11 @@ popurDeliveryClose.addEventListener('click', function () {
 });
 
 /* card */
+const tabsDeliveryClose = document.querySelector('.tabs__delivery-close');
+const tabsCardMobil = document.querySelector('.tabs__card-mobile');
+const tabsCard = document.querySelector('.tabs__card');
+
+/* card */
 tabsCard.addEventListener('click', function () {
     tabsCardMobil.classList.add('active');
     tabsCard.classList.add('active');
@@ -104,18 +116,6 @@ tabsCard.addEventListener('click', function () {
 tabsDeliveryClose.addEventListener('click', function () {
     tabsCardMobil.classList.remove('active');
     tabsCard.classList.remove('active');
-});
-
-/* modal_product */
-closeBtn.addEventListener('click', () => {
-    modal.classList.remove('active');
-    popupWindow.classList.remove('active');
-});
-
-popupWindow.addEventListener('click', () => {
-    modal.classList.remove('active');
-    popupWindow.classList.remove('active');
-    modalDelivery.classList.remove('active');
 });
 
 /* slider */
