@@ -1006,7 +1006,7 @@ svg * {
         width: 100%;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
+        /*  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16); */
         display: none;
     }
 
@@ -1014,10 +1014,10 @@ svg * {
         display: block;
     }
 
-    .tabs__card.active {
+    /*   .tabs__card.active {
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
         margin: 0;
-    }
+    } */
 
     .tabs__card-list::before {
         width: 89%;

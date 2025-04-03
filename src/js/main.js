@@ -108,14 +108,21 @@ const tabsCardMobil = document.querySelector('.tabs__card-mobile');
 const tabsCard = document.querySelector('.tabs__card');
 
 /* card */
-tabsCard.addEventListener('click', function () {
-    tabsCardMobil.classList.add('active');
+function showPopup() {
     tabsCard.classList.add('active');
-});
+    tabsCardMobil.classList.add('active');
+}
 
-tabsDeliveryClose.addEventListener('click', function () {
-    tabsCardMobil.classList.remove('active');
+function hidePopup() {
     tabsCard.classList.remove('active');
+    tabsCardMobil.classList.remove('active');
+}
+
+tabsCard.addEventListener('click', showPopup);
+
+tabsDeliveryClose.addEventListener('click', function (e) {
+    e.stopPropagation();
+    hidePopup();
 });
 
 /* slider */
