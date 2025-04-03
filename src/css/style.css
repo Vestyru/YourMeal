@@ -625,7 +625,7 @@ svg * {
 
 .popur__window-close::before {
     content: '';
-    background-image: url(/src/img/close.svg);
+    background-image: url(../../src/img/close.svg);
     position: absolute;
     right: 0;
     top: 0;
@@ -636,7 +636,7 @@ svg * {
 
 .popur__window-delivery--close::before {
     content: '';
-    background-image: url(/src/img/close.svg);
+    background-image: url(../../src/img/close.svg);
     position: absolute;
     right: 24px;
     top: 24px;
