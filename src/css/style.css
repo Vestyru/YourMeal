@@ -1143,6 +1143,10 @@ svg * {
         padding-right: 10px;
     }
 
+    .footer {
+        padding: 44px 75px 44px 10px;
+    }
+
     .header__contetn {
         padding: 0;
     }
@@ -1197,10 +1201,6 @@ svg * {
 
     .footer__contact {
         margin: 0;
-    }
-
-    .footer {
-        padding: 44px 75px 44px 10px;
     }
 
     .tabs__menu-images-mobile {
