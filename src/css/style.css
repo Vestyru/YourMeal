@@ -1096,6 +1096,20 @@ svg * {
     }
 }
 
+@media (max-width: 575px) {
+    .footer__call {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 44px 75px 44px 10px;
+    }
+
+    .footer__social {
+        margin-top: 24px;
+    }
+}
+
 @media (max-width: 540px) {
     .h1 {
         font-size: 34px;
@@ -1143,20 +1157,12 @@ svg * {
         padding-right: 10px;
     }
 
-    .footer__social {
-        margin-top: 24px;
-    }
-
     .footer__phone {
         margin-top: 8px;
     }
 
     .tabs__card {
         width: 100%;
-    }
-
-    .footer {
-        padding: 44px 75px 44px 10px;
     }
 
     .header__contetn {
@@ -1168,10 +1174,6 @@ svg * {
 
     .tabs__menu-card {
         gap: 10px;
-    }
-
-    .footer__call {
-        flex-direction: column;
     }
 
     .footer__contact {
