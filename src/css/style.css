@@ -442,7 +442,7 @@ svg * {
 }
 
 .tabs__card-list {
-    display: inline-block;
+    display: none;
     position: relative;
 }
 
@@ -603,6 +603,12 @@ svg * {
 
 .errortext.hidden {
     display: none;
+}
+
+.errortext {
+    width: 300px;
+    display: block;
+    margin-top: 15px;
 }
 
 .footer__mobile {
